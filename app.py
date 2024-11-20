@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Path to save downloaded files
-DOWNLOAD_FOLDER = '/tmp/downloads'
+DOWNLOAD_FOLDER = './downloads'
 if not os.path.exists(DOWNLOAD_FOLDER):
     os.makedirs(DOWNLOAD_FOLDER)
 
