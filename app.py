@@ -14,10 +14,6 @@ if not os.path.exists(DOWNLOAD_FOLDER):
 def home():
     return "Flask app is running!"
 
-# Route to handle favicon requests
-@app.route('/favicon.ico')
-def favicon():
-    return '', 204
 
 # Endpoint to handle video download requests
 @app.route('/download', methods=['POST'])
@@ -65,4 +61,5 @@ def download_video():
 
 
 if __name__ == '__main__':
+    # For local testing
     app.run(debug=True, host="0.0.0.0", port=80)
