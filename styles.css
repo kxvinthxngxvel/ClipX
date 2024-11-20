@@ -1,0 +1,8 @@
+#clipx-download {
+    transition: background-color 0.3s ease;
+  }
+  
+  #clipx-download:hover {
+    background-color: #cc0000;
+  }
+  
